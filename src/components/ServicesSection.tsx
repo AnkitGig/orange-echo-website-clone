@@ -38,18 +38,18 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+    <section id="services" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 lg:mb-16">
-          <p className="text-orange-500 font-semibold mb-2 text-sm sm:text-base">SPECIALIZATION</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-6 lg:mb-8">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <p className="text-orange-500 font-semibold mb-2 text-xs sm:text-sm">SPECIALIZATION</p>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-blue-900 mb-4 sm:mb-6 lg:mb-8">
             Expertise Area
           </h2>
-          <p className="text-base lg:text-lg text-gray-600 max-w-4xl mx-auto mb-8 lg:mb-12">
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-4xl mx-auto mb-6 sm:mb-8 lg:mb-12 px-2 sm:px-0">
             Dr. Moiz Topiwala has expertise in metabolic diseases like Diabetes, Thyroid disorder, Obesity, Hypertension with counselling and knowledge about right diet and workout.
           </p>
           
-          <div className="space-y-2 text-left max-w-4xl mx-auto text-sm sm:text-base">
+          <div className="space-y-1 sm:space-y-2 text-left max-w-4xl mx-auto text-xs sm:text-sm">
             <div className="flex items-start text-gray-600">
               <span className="text-orange-500 mr-2 mt-1 flex-shrink-0">✓</span>
               <span>Thorough in Emergency Procedures like IJV cannulation, endotracheal intubation, H.D catheterisation, Arterial line placement.</span>
@@ -81,13 +81,13 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service, index) => (
-            <div key={index} className={`bg-white p-4 sm:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ${service.highlighted ? 'border-t-4 border-orange-500' : ''}`}>
-              <div className="bg-orange-500 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-3 sm:mb-4">
-                <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            <div key={index} className={`bg-white p-3 sm:p-4 lg:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ${service.highlighted ? 'border-t-4 border-orange-500' : ''}`}>
+              <div className="bg-orange-500 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center mb-2 sm:mb-3 lg:mb-4">
+                <service.icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">{service.title}</h3>
+              <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">{service.title}</h3>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">{service.description}</p>
             </div>
           ))}
