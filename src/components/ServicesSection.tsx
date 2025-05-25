@@ -18,7 +18,7 @@ const ServicesSection = () => {
     {
       icon: ShieldCheck,
       title: "Infectious Diseases",
-      description: "Get the best in the town opinion and management for infectious diseases - Dengue, Typhoid, Tuberculosis etc. Dr. Moiz Topiwala has experience of treating 1000+ COVID patients. Get expert opinion for HIV + patients and other health issues related to it."
+      description: "Get expert opinion and management for infectious diseases - Dengue, Typhoid, Tuberculosis etc. Dr. Moiz Topiwala has experience of treating 1000+ COVID patients. Get expert opinion for HIV + patients and other health issues related to it."
     },
     {
       icon: Droplets,
