@@ -1,70 +1,43 @@
 
 import React from 'react';
-import { GraduationCap, Award, Users, Clock } from 'lucide-react';
 
 const AboutSection = () => {
-  const credentials = [
-    {
-      icon: GraduationCap,
-      title: "Education",
-      description: "MD from Harvard Medical School, Pediatric Cardiology Fellowship at Boston Children's Hospital"
-    },
-    {
-      icon: Award,
-      title: "Certifications",
-      description: "Board Certified in Pediatric Cardiology, American Board of Pediatrics"
-    },
-    {
-      icon: Users,
-      title: "Experience",
-      description: "15+ years treating pediatric cardiac conditions with over 1000 successful cases"
-    },
-    {
-      icon: Clock,
-      title: "Availability",
-      description: "Flexible scheduling with same-day appointments available for urgent cases"
-    }
-  ];
-
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="text-center mb-8">
+          <p className="text-orange-500 font-semibold mb-2">About Dr. Moiz Topiwala</p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Dr. Moiz Topiwala in clinic"
-              className="rounded-lg shadow-lg"
+              src="/lovable-uploads/4978b7a0-8c5c-48f3-a329-3107d75ac37f.png"
+              alt="Dr. Moiz Topiwala with patients"
+              className="rounded-lg shadow-lg w-full"
             />
           </div>
           
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              About Dr. Moiz Topiwala
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+              Dr. Moiz Topiwala MBBS, DNB (Internal Medicine)
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Dr. Moiz Topiwala is a board-certified pediatric cardiologist with over 15 years of experience 
-              in treating children with heart conditions. He is dedicated to providing the highest quality 
-              cardiac care while ensuring a comfortable and supportive environment for both patients and families.
-            </p>
-            <p className="text-gray-600 mb-8">
-              His expertise includes congenital heart disease, cardiac catheterization, echocardiography, 
-              and preventive cardiology. Dr. Topiwala believes in a family-centered approach to care, 
-              working closely with parents and caregivers to develop personalized treatment plans.
-            </p>
+            
+            <div className="space-y-4 text-gray-600">
+              <p>
+                Dr. Moiz Topiwala is a <span className="text-orange-500 font-semibold">Physician</span> and <span className="text-blue-900 font-semibold">Intensivist</span> with expertise in patient care and management. Currently, he is practicing at Apple Hospital Indore as a Medical Director. He is skilled to perform all emergency procedures and a certified ACLS and BLS provider. For the hospital, he has managed COVID-19 IPD and OPD during the pandemic.
+              </p>
+              
+              <p>
+                He has the experience of managing patients with varying array of illnesses in field of Internal Medicine and Intensive care. He has conducted training sessions of junior doctors and Intensivist in ventilator settings and adjustments in I.C.U.
+              </p>
+            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {credentials.map((credential, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <div className="bg-orange-600 p-2 rounded-lg">
-                    <credential.icon className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">{credential.title}</h4>
-                    <p className="text-sm text-gray-600">{credential.description}</p>
-                  </div>
-                </div>
-              ))}
+            {/* Orange medical cross icon */}
+            <div className="mt-8">
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                <div className="text-white text-2xl font-bold">✚</div>
+              </div>
             </div>
           </div>
         </div>

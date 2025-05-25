@@ -1,63 +1,46 @@
 
 import React from 'react';
-import { Heart, Award, Users } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="bg-gradient-to-r from-orange-50 to-orange-100 py-20">
+    <section id="home" className="bg-gray-100 py-20 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Expert Pediatric Cardiology Care for Your Child
+          <div className="relative z-10">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+              <span className="text-blue-900">Dr. </span>
+              <span className="text-orange-500">Moiz</span>
+              <br />
+              <span className="text-blue-900">Topiwala</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              Dr. Moiz Topiwala provides comprehensive cardiac care for children with congenital heart conditions, 
-              ensuring the best possible outcomes with compassionate, family-centered treatment.
+            <p className="text-lg text-gray-600 mb-8 italic">
+              Physician, Intensivist, Chest Physician
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <button className="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition-colors">
-                Schedule Consultation
-              </button>
-              <button className="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-lg hover:bg-orange-600 hover:text-white transition-colors">
-                Learn More
-              </button>
-            </div>
             
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="bg-orange-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Heart className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm font-semibold text-gray-700">15+ Years Experience</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-orange-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Award className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm font-semibold text-gray-700">Board Certified</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-orange-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm font-semibold text-gray-700">1000+ Patients</p>
-              </div>
+            {/* Decorative icons */}
+            <div className="absolute -top-10 right-20 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-500 rounded"></div>
+            </div>
+            <div className="absolute top-32 -left-10 w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center">
+              <div className="text-blue-500 text-2xl">⚕</div>
             </div>
           </div>
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="/lovable-uploads/29579fc9-d8ff-4dc1-a4b4-d4e30f9da6b8.png"
               alt="Dr. Moiz Topiwala"
-              className="rounded-lg shadow-2xl"
+              className="w-full h-auto"
             />
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-              <p className="text-2xl font-bold text-orange-600">15+</p>
-              <p className="text-sm text-gray-600">Years of Excellence</p>
-            </div>
           </div>
         </div>
+      </div>
+      
+      {/* Background geometric pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-32 h-32 border-2 border-gray-300 transform rotate-45"></div>
+        <div className="absolute top-20 right-20 w-24 h-24 border-2 border-gray-300 transform rotate-45"></div>
+        <div className="absolute bottom-20 left-20 w-28 h-28 border-2 border-gray-300 transform rotate-45"></div>
       </div>
     </section>
   );
