@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Lungs, ShieldCheck, Droplets, Stethoscope, Kidney } from 'lucide-react';
+import { Heart, Wind, ShieldCheck, Droplets, Stethoscope, Droplet } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
@@ -11,7 +11,7 @@ const ServicesSection = () => {
       highlighted: true
     },
     {
-      icon: Lungs,
+      icon: Wind,
       title: "Respiratory Disease",
       description: "Get all latest treatment options especially for patients with COPD and Bronchial Asthma. Vast experience in managing patients of lung failure on ventilators."
     },
@@ -31,7 +31,7 @@ const ServicesSection = () => {
       description: "Get expert opinion and treatment options on all patients with acute and chronic heart diseases and heart failure."
     },
     {
-      icon: Kidney,
+      icon: Droplet,
       title: "Kidney Diseases",
       description: "Get expert opinion and treatment options on all patients with acute and chronic kidney diseases and kidney failures."
     }
